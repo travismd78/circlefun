@@ -1,0 +1,21 @@
+{
+  "name": "circlefun",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "jquery": "^3.5.1",
+    "meteor-node-stubs": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
