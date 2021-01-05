@@ -1,13 +1,10 @@
-version: 2.1
-jobs:
-  build:
-    machine:
-      node:
+machine:
+  node:
     version: 0.10.43
-    dependencies:
-      override:
-        - curl https://install.meteor.com | /bin/sh
-        - npm install
-    checkout:
-      post:
-        - git submodule update --init
+dependencies:
+  override:
+    - curl https://install.meteor.com | /bin/sh
+    - npm install
+checkout:
+  post:
+    - git submodule update --init
