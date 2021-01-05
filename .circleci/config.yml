@@ -1,7 +1,13 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+jobs:
+  build:
+    machine:
+      node:
+    version: 0.10.43
+    dependencies:
+      override:
+        - curl https://install.meteor.com | /bin/sh
+        - npm install
+    checkout:
+      post:
+        - git submodule update --init
